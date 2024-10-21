@@ -2,26 +2,20 @@
 @tailwind components;
 @tailwind utilities;
 
-:root {
-  --background: #ffffff;
-  --foreground: #171717;
-}
-
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
-  }
-}
-
 body {
-  color: var(--foreground);
-  background: var(--background);
-  font-family: Arial, Helvetica, sans-serif;
+  @apply bg-yoru0 text-tsuki4 font-mono;
 }
 
 @layer utilities {
   .text-balance {
     text-wrap: balance;
   }
+}
+
+.bubble-user {
+  @apply border border-sangoBlue w-3/4 p-2 rounded rounded-tr-none ml-auto;
+}
+
+.bubble-assistant {
+  @apply border border-yoru4 w-3/4 p-2 rounded rounded-tl-none mr-auto;
 }
